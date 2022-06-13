@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: #f3f3f3;
+    margin: 2rem 0;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: #eeeeee;
+    margin-bottom: 5rem;
+    font-size: 0.9375rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    padding: 2.5rem;
+    flex: 1 1 0px;
+    align-self: stretch;
+    width: 100%;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+button {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    outline: 0;
+    border-radius: 5rem;
+    padding: 0.7rem 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+
+.sedans-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+@media screen and (max-width:573px) {
+    .sedan {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: unset;
+    }
+    
+    .suvs {
+        border-top-left-radius: unset;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: unset;
+    }
+    
+    .luxury {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width:404px) {
+    .sedan {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: unset;
+    }
+    
+    .suvs {
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 0.5rem;
+    }
+    
+    .luxury {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width:402px) {
+    .sedan {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: unset;
+    }
+    
+    .suvs {
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: unset;
+    }
+    
+    .luxury {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    
+}
